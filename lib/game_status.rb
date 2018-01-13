@@ -33,7 +33,9 @@ def won?(board)
 end
 
 def full?(board)
-[board].none? {|position| position == " "}
+[board].each? do |position|
+if position != "X" && position != "O"
+end
 end
 
 def draw?(board)

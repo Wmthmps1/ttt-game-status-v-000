@@ -38,6 +38,7 @@ full_board=[board].none? {|position| position == (" ")}
    return true
  else
    return false
+ end
 end
 
 def draw?(board)

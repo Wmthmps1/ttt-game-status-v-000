@@ -37,5 +37,9 @@ full_board=[board].none? {|position| position == (" ")}
 end
 
 def draw?(board)
+  won?(board)
+  full?(board)
+  if won?(board) == false && w
+
 
 end

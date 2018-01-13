@@ -33,7 +33,12 @@ def won?(board)
 end
 
 def full?(board)
-full_board=[board].none? {|position| position == (" ")}
+[board].each do |position|
+  if position == (" ")
+    return false
+  end
+ end
+return true
 end
 
 def draw?(board)

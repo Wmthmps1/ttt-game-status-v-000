@@ -33,7 +33,7 @@ def won?(board)
 end
 
 def full?(board)
-full_board=[board].all? {|position| position == (" ")}
+full_board=[board].none? {|position| position == (" ")}
 end
 
 def draw?(board)

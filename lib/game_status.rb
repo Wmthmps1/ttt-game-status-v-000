@@ -35,7 +35,10 @@ end
 def full?(board)
 [board].each? do |position|
 if position != "X" && position != "O"
+  return false
 end
+end
+return true
 end
 
 def draw?(board)

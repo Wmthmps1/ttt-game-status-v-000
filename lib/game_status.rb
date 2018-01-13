@@ -38,6 +38,7 @@ if full_board=[board].none? {|position| position == (" ")}
 else
   return false
 end
+end
 
 def draw?(board)
   won?(board)

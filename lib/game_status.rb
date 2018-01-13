@@ -34,11 +34,7 @@ end
 
 def full?(board)
 full_board=[board].none? {|position| position == (" ")}
- if full_board == true
-   return true
- else
-   return false
- end
+
 end
 
 def draw?(board)
